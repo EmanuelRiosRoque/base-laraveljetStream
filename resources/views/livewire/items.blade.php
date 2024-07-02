@@ -1,6 +1,6 @@
 <div class="p-6 bg-white border-b border-gray-200 lg:p-8">
     <h1 class="mt-8 text-2xl font-medium text-gray-900">
-            Items
+            Lista Tickets
     </h1>
     <section class="container px-4 mx-auto">
         <div class="sm:flex sm:items-center sm:justify-between">
@@ -12,14 +12,14 @@
                     </svg>
                     <span class="sr-only">Info</span>
                     <div>
-                      <span class="font-medium">Success alert!</span> {{session('success')}}
+                      <span class="font-medium">Alerta Satisfactoria!</span> {{session('success')}}
                     </div>
                   </div>
                 @endif
                 <div class="flex items-center gap-x-3">
-                    <h2 class="text-lg font-medium text-gray-800 ">Customers</h2>
+                    <h2 class="text-lg font-medium text-gray-800 ">Tickets</h2>
 
-                    <span class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full ">{{$count}} Items</span>
+                    <span class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full ">{{$count}} Total Tikets</span>
                 </div>
             </div>
 
@@ -54,7 +54,7 @@
         <div class="mt-6">
             <div class="inline-flex overflow-hidden bg-white border divide-x rounded-lg ">
                 <button wire:click="$toggle('active')" class=" {{$active ? 'bg-gray-100' : ''}} px-5 py-2 text-xs font-medium text-gray-600  transition-colors duration-200 sm:text-sm">
-                    Only Active
+                    Solo Activos
                 </button>
             </div>
 
@@ -65,7 +65,7 @@
                     </svg>
                 </span>
 
-                <input wire:model.live='search' type="text" placeholder="Search" class="block w-full py-1.5 pr-5 text-gray-700 bg-white border border-gray-200 rounded-lg md:w-80 placeholder-gray-400/70 pl-11 rtl:pr-11 rtl:pl-5 focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 mt-2">
+                <input wire:model.live='search' type="text" placeholder="Buscar" class="block w-full py-1.5 pr-5 text-gray-700 bg-white border border-gray-200 rounded-lg md:w-80 placeholder-gray-400/70 pl-11 rtl:pr-11 rtl:pl-5 focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 mt-2">
         </div>
 
         <div class="flex flex-col mt-6">
