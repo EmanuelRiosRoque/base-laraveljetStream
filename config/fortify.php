@@ -27,7 +27,6 @@ return [
     | of your password brokers setup in your "auth" configuration file.
     |
     */
-
     'passwords' => 'users',
 
     /*
@@ -45,7 +44,7 @@ return [
     |
     */
 
-    'username' => 'email',
+    'username' => 'n_empleado',
 
     'email' => 'email',
 
